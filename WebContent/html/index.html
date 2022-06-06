@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset = "UTF-8">
+    <meta charset="UTF-8">
     <title>Title</title>
-    <link rel = "stylesheet" href = "../css/Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
 <section>
-    <div class="circle"></div>
     <header>
-        <a href = "#"> <img src = "../img/logo.png" class = "logo"></a>
+        <a href="index.html"> <img src="../img/logo.png" class="logo" alt=""></a>
         <ul>
-            <li><a href = "#">HOME</a></li>
-            <li><a href = "#">MENU</a></li>
-            <li><a href = "#">What's NEW</a></li>
-            <li><a href = "#">Contact</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">What's NEW</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-
     </header>
-    <div class = "content">
-        <div class = "textBox">
-            <h2> It's not just Coffee<br> It's a <span>Starbucks</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-            <a href = "#"> Learn more</a>
-        </div>
-        <div class = "imgBox">
-            <img src = "../img/img1.png" class = "starbucks">
+    <div class="main-visual_wrap">
+        <div class="if">
+            <iframe src="content.html"></iframe>
         </div>
     </div>
-    <ul class = "thumb">
-        <li><img src = "../img/thumb1.png" onclick="imgSlider('../img/img1.png'); changeCircleColor('#017143')"></li>
-        <li><img src = "../img/thumb2.png" onclick="imgSlider('../img/img2.png'); changeCircleColor('#eb7495')"></li>
-        <li><img src = "../img/thumb3.png" onclick="imgSlider('../img/img3.png'); changeCircleColor('#d752b1')"></li>
-    </ul>
-    <ul class = "sci">
-        <li><a href="#"><img src = "../img/facebook.png"></a></li>
-        <li><a href="#"><img src = "../img/twitter.png"></a></li>
-        <li><a href="#"><img src = "../img/instagram.png"></a></li>
-    </ul>
 </section>
+<section id="favWrap" class="winter_fav_bg">
+    <div class="wrap_inner">
+        <div class="fav_prod_txt01" style="opacity: 1; left: 200px;">PICK YOUR FAVORITE</div>
+        <div class="fav_prod_txt02" style="opacity: 1; left: 92px;">
+            다양한 메뉴를 스타벅스에서 즐겨보세요.
+            스타벅스만의 특별함을 경험할 수 있는 최상의 선택 음료,
+            스타벅스 커피와 완벽한 어울림을 자랑하는 푸드,
+            다양한 시도와 디자인으로 가치를 더하는 상품,
+            소중한 사람에게 마음을 전하는 가장 좋은 방법 스타벅스 카드
+        </div>
+        <div class="fav_img"></div>
+        <div class="btn_fav_prod" style="opacity: 1;"><a href="#">자세히 보기</a></div>
+    </div>
+</section>
+<footer id="footer">
+    <aside class="copyright">
+        <a class="c_00b050" href="#">개인정보처리방침</a>
+        <a href="#">홈페이지 이용약관</a>
+        <a href="#" class="mbn">위치정보 이용약관</a>
+        <a href="#" class="mbn">비회원 이용약관</a>
+        <br>
+        <a class="btned_link" href="#">찾아오시는 길</a>
+        <a class="btned_link" href="#">사이트 맵</a><br>
+        <span class="en">ⓒ 2022 copyright-free</span>
+    </aside>
+</footer>
 </body>
-<script type="text/javascript">
-    function imgSlider(anything){
-        document.querySelector('.starbucks').src = anything;
-    }
-    function changeCircleColor(color) {
-    const circle = document.querySelector('.circle');
-    circle.style.background = color;
-    }
-</script>
+
 </html>
